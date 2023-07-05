@@ -143,7 +143,7 @@ footer{
     align-items: center;
     width: 992px;
     margin: 0 auto;
-    gap: 50px;
+    gap: 100px;
 }
 
 
@@ -199,7 +199,6 @@ footer{
     align-items: center;
     color: #7F7F7F;
     gap: 10px;
-    width: 50%;
 }
 
 
@@ -234,19 +233,20 @@ footer{
 .time-bar{
     display: flex;
     align-items: center;
-    gap: 15px;
-    
+    justify-content: center;
+    gap: 10px;
     
 }
 
 .time-bar .bar{
-    flex-grow: 1;
+    width: 80%;
     height: 5px;
     border-radius: 15px;
     background-color: #7F7F7F;
 }
 
 .bar> .bar.minute{
+
     width: 40%;
     background-color: #c1c1c1; 
 }
@@ -278,7 +278,7 @@ footer{
 
 /************* 
 * RESPONSIVE * 
-X-Small <576px - Small ≥576px - Medium ≥768px - Large ≥992px
+X-Small <576px - Small ≥576px - Medium >768px - Large >992px
 **************/
 
 /* ***LARGE*** */
@@ -293,7 +293,7 @@ X-Small <576px - Small ≥576px - Medium ≥768px - Large ≥992px
 @media screen and (max-width: 768px){
     #footer> .container{
         max-width: 768px;
-        gap: 0px;
+        gap: 50px;
     }
 
 
@@ -304,12 +304,33 @@ X-Small <576px - Small ≥576px - Medium ≥768px - Large ≥992px
 
 /* ***SMALL*** */
 
+@media screen and (max-width: 576px){
+    #footer> .container{
+        max-width: 576px;
+        gap: 20px;
+        
+    }
 
+    #footer .col.left .icon{
+        flex-direction: column;
+    }
+
+    #footer .time-bar{
+        gap: 5px;
+    }
+
+    #footer .time-bar .bar{
+        width: 40%;
+                
+    }
+
+
+}
 
 
 /* *** X-SMALL*** */
 
-@media screen and (max-width: 575px){
+@media screen and (max-width: 576px){
 
     #sidebar{
         width: 50px;
