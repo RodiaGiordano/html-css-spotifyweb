@@ -52,9 +52,18 @@ footer .col{
     color: white;
 }
 
+.text .xsmall{
+    font-size: small;
+}
+
+.text .small{
+font-size: small;
+}
+
 
 .album> .name-song {
     color: #7F7F7F;
+    white-space: nowrap;
 }
 
 
@@ -134,6 +143,7 @@ footer{
     align-items: center;
     width: 992px;
     margin: 0 auto;
+    gap: 50px;
 }
 
 
@@ -175,14 +185,17 @@ footer{
 
  .album{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    
     
 }
 
  .col.left .icon{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     color: #7F7F7F;
     gap: 10px;
@@ -194,13 +207,14 @@ footer{
 
 .col.middle{
     flex-grow: 1;
-    margin: 0 50px;
+    
     
 }
 
 .col.middle{    
     flex-direction: column;
     justify-content: space-around;
+    width: 40%;
         
 }
 
@@ -213,9 +227,8 @@ footer{
 
 
 .player #play> *{
-    font-size: 1rem;
-    text-align: center;
-    
+    font-size: 1.5rem;
+    text-align: center;  
 }
 
 .time-bar{
@@ -243,8 +256,6 @@ footer{
     justify-content: right;
     align-items: center;
 }
-
-
 
 
 .bar-sound{
@@ -279,6 +290,15 @@ X-Small <576px - Small ≥576px - Medium ≥768px - Large ≥992px
 
 /* ***MEDIUM*** */
 
+@media screen and (max-width: 768px){
+    #footer> .container{
+        max-width: 768px;
+        gap: 0px;
+    }
+
+
+}
+    
 
 
 
