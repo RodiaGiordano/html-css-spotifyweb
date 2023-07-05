@@ -9,11 +9,9 @@
 
 
 
-
 /********** 
-* UTILITY *
+* DEBUG *
 ***********/
-
 main> *{
     border: 2px dashed red;
     min-height: 250px;
@@ -21,9 +19,41 @@ main> *{
 
 footer> *{
     border: 2px dashed red;
-    min-height: 100px;
+    height: 100px; 
     
+}
+
+footer .col{
+    border: 2px dashed red;
     
+}
+
+
+/********** 
+* UTILITY *
+***********/
+
+.container{
+    padding: 0 1rem
+}
+
+.row{
+    margin: 0 -1rem;
+}
+
+.col{
+    padding: 0 1rem;
+}
+
+.album> .name-album{
+    font-weight: bold;
+    color: white;
+}
+
+.album> .name-song{
+    font-weight: bold;
+    font-size: small;
+    color: #7F7F7F;
 }
 
 
@@ -75,8 +105,84 @@ main{
     top: 0;
     right: 0;
     width: calc(100% - 200px);
+    z-index: 10;
     height: 100px;
 }
+
+
+
+/*************** 
+*    FOOTER    *
+****************/
+
+footer{
+    background-color: #282828;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+#footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 992px;
+    margin: 0 auto;
+}
+
+
+#footer .col{
+    display: flex;
+    height: 70%;
+    width: calc(100% / 3);
+}
+    
+
+
+#footer .col.left{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+#footer .song{
+    display: flex;
+    width: 50%;
+   
+}
+
+
+#footer .img-song{
+    width: 50%;
+    
+}
+
+#footer .img-song> *    {
+    height: 100%;
+    display: block;
+}
+
+ .album{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ .col.left .icon{
+    display: flex;
+    align-items: center;
+    color: #7F7F7F;
+    gap: 10px;
+}
+
+
+
+
 
 
 
