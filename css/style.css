@@ -143,6 +143,7 @@ footer{
 #footer .col{
     display: flex;
     height: 70%;
+    padding: 0 30px;
 }
 
 #footer .col:nth-of-type(odd){
@@ -160,13 +161,14 @@ footer{
 #footer .song{
     display: flex;
     justify-content: start;
-    width: 70%;  
+    width: 70%; 
+    gap: 5px; 
    
 }
 
 
 #footer .img-song{
-    width: 40%; 
+    width: 70px; 
 }
 
 #footer .img-song> *    {
@@ -183,7 +185,7 @@ footer{
 
  .col.left .icon{
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     color: #7F7F7F;
     gap: 10px;
@@ -193,10 +195,13 @@ footer{
 
 /* col-middle */
 
+.col.middle{
+    flex-grow: 1;
+}
+
 .col.middle{    
     flex-direction: column;
     justify-content: space-around;
-    flex-grow: 1;
         
 }
 
@@ -209,9 +214,6 @@ footer{
     gap: 15px;
 }
 
-.col.middle li{
-    
-}
 
 .player #play{
     font-size: 2rem;
@@ -233,11 +235,34 @@ footer{
 }
 
 .bar> .bar.minute{
-    width: 20%;
+    width: 40%;
     background-color: #c1c1c1; 
 }
 
+.col.rigth{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
 
+
+
+
+.bar-sound{
+    width: 50%;
+    height: 5px;
+    margin-left: 14px;
+    border-radius: 20px;
+    background-color: #7F7F7F;
+}
+
+.bar-sound> .bar-volume{
+    width: 30%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #c1c1c1;
+
+}
 
 
 
