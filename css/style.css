@@ -17,11 +17,17 @@
 * UTILITY *
 ***********/
 
+main> *{
+    border: 2px dashed red;
+    min-height: 250px;
+}
 
-
-
-
-
+footer> *{
+    border: 2px dashed red;
+    min-height: 100px;
+    
+    
+}
 
 
 
@@ -33,12 +39,36 @@
 * MAIN *
 *********/
 
+main{
+    display: flex;
+
+}
+
+
+
+
+
+/************* 
+*  SIDEBAR   *
+**************/
+
+#sidebar{
+    height: calc(100vh - 100px);
+    width: 200px;
+}
 
 
 
 
 
 
+/*************** 
+* MAIN CONTENT *
+****************/
+
+.main-content{
+    flex-grow: 1;
+}
 
 
 
