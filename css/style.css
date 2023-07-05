@@ -10,9 +10,6 @@
 
 
 
-
-
-
 /********** 
 * UTILITY *
 ***********/
@@ -33,8 +30,6 @@ footer> *{
 
 
 
-
-
 /******** 
 * MAIN *
 *********/
@@ -43,7 +38,6 @@ main{
     display: flex;
 
 }
-
 
 
 
@@ -61,18 +55,63 @@ main{
 
 
 
-
 /*************** 
 * MAIN CONTENT *
 ****************/
 
 .main-content{
+    
     flex-grow: 1;
 }
 
 
+/************* 
+* HEADER *
+**************/
+
+#header{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    width: calc(100% - 200px);
+    height: 100px;
+}
+
 
 
 /************* 
-* RESPONSIVE *
+* RESPONSIVE * 
+X-Small <576px - Small ≥576px - Medium ≥768px - Large ≥992px
 **************/
+
+/* ***LARGE*** */
+
+
+
+
+
+
+/* ***MEDIUM*** */
+
+
+
+
+/* ***SMALL*** */
+
+
+
+
+/* *** X-SMALL*** */
+
+@media screen and (max-width: 575px){
+
+    #sidebar{
+        width: 50px;
+
+    }
+    
+    #header{
+        width: calc(100% - 50px);
+    }
+}
