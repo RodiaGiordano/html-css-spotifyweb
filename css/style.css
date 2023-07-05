@@ -20,15 +20,10 @@ main> *{
 }
 
 footer> *{
-    border: 2px dashed red;
-    height: 100px; 
-    
+    height: 100px;   
 }
 
-footer .col{
-    border: 2px dashed red;
-    
-}
+
 
 
 /********** 
@@ -63,7 +58,7 @@ font-size: small;
 
 .album> .name-song {
     color: #7F7F7F;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 
@@ -141,7 +136,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 992px;
+    width: 100%;
     margin: 0 auto;
     gap: 100px;
 }
@@ -168,14 +163,15 @@ footer{
 #footer .song{
     display: flex;
     justify-content: start;
-    width: 70%; 
+    /* width: 70%;  */
     gap: 5px; 
    
 }
 
 
 #footer .img-song{
-    width: 70px; 
+    max-height: 100%;
+    max-width: 70px; 
 }
 
 #footer .img-song> *    {
@@ -291,10 +287,7 @@ X-Small <576px - Small ≥576px - Medium >768px - Large >992px
 /* ***MEDIUM*** */
 
 @media screen and (max-width: 768px){
-    #footer> .container{
-        max-width: 768px;
-        gap: 50px;
-    }
+      
 
 
 }
@@ -307,7 +300,7 @@ X-Small <576px - Small ≥576px - Medium >768px - Large >992px
 @media screen and (max-width: 576px){
     #footer> .container{
         max-width: 576px;
-        gap: 20px;
+        gap: 15px;
         
     }
 
@@ -320,17 +313,16 @@ X-Small <576px - Small ≥576px - Medium >768px - Large >992px
     }
 
     #footer .time-bar .bar{
-        width: 40%;
+        width: 50%;
                 
     }
-
 
 }
 
 
 /* *** X-SMALL*** */
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 575px){
 
     #sidebar{
         width: 50px;
@@ -340,4 +332,29 @@ X-Small <576px - Small ≥576px - Medium >768px - Large >992px
     #header{
         width: calc(100% - 50px);
     }
+
+
+
+    /* FOOTER */
+
+    #footer> .container{
+        width: 100%;
+        gap: 0px;
+        
+    }   
+
+    #footer .img-song{
+        max-width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer .img-song img{
+        height: 50%;
+
+    }
+   
+  
+
 }
