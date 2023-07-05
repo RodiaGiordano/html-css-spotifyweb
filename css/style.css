@@ -44,21 +44,14 @@ footer .col{
 }
 
 .col{
-    padding: 0 1rem;
+   
 }
 
-.text{
+ .text{
     font-weight: bold;
     color: white;
 }
 
-.text.small{
-    font-size: small;
-}
-
-.text.xsmall{
-    font-size: x-small;
-}
 
 .album> .name-song {
     color: #7F7F7F;
@@ -131,6 +124,10 @@ footer{
     z-index: 9;
 }
 
+#footer> .container *{
+    font-size: x-small;
+}
+
 #footer .container{
     display: flex;
     justify-content: space-between;
@@ -143,7 +140,7 @@ footer{
 #footer .col{
     display: flex;
     height: 70%;
-    padding: 0 30px;
+    
 }
 
 #footer .col:nth-of-type(odd){
@@ -197,6 +194,8 @@ footer{
 
 .col.middle{
     flex-grow: 1;
+    margin: 0 50px;
+    
 }
 
 .col.middle{    
@@ -208,15 +207,15 @@ footer{
 .player> ul{
     display: flex;
     justify-content: center;
-    text-align: center;
     align-items: center;
-    font-size: 1.2rem;
     gap: 15px;
 }
 
 
-.player #play{
-    font-size: 2rem;
+.player #play> *{
+    font-size: 1rem;
+    text-align: center;
+    
 }
 
 .time-bar{
