@@ -425,7 +425,10 @@ nav{
     gap: 15px;
 }
 
+.icon-left i:hover{
+    color: white;
 
+}
 
 
 
