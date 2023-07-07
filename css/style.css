@@ -271,6 +271,19 @@ nav{
     text-align: center;
 }
 
+.border-green{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#border-bottom{
+    width: 25%;
+    background-color: lime;
+    height: 2px;
+    margin-top: 3px;
+}
+
 .title-main{
     margin-bottom: 1.5rem;
     line-height: 1.5rem;
@@ -459,18 +472,8 @@ X-Small <576px - Small >576px - Medium >768px - Large >992px
     }
 }
 
-.border-green{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-#border-bottom{
-    width: 30%;
-    background-color: lime;
-    height: 2px;
-    margin-top: 3px;
-}
+    
 
 
 /* ***SMALL** */
