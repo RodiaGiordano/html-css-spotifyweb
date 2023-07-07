@@ -51,7 +51,7 @@ scorporare crea playlist dalle playlist */
     text-align: center; 
 }
 
-.col:hover img{
+.card:hover img{
     filter: sepia(10);
     
 }
@@ -225,6 +225,7 @@ nav{
 
 #album{
     overflow: auto;
+    height: 100%;
     
 }
     
