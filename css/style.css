@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+/* aggiungere favicon
+rifare footer
+sistemare font
+scorporare crea playlist dalle playlist */
 
 
 /********** 
@@ -37,13 +41,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px; 
-
-    margin-bottom: 30px;
-    
+   
     
 }
 
 .col{
+    padding-bottom: 40px;
     width: calc(100% / 6 - 10px);
     text-align: center; 
 }
@@ -226,7 +229,7 @@ nav{
 
 .musical-categories{
     padding-top: 25px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -411,6 +414,12 @@ X-Small <576px - Small >576px - Medium >768px - Large >992px
 
 @media screen and (max-width: 992px){
 
+/* ALBUM */
+
+.col{
+    width: calc(100% / 4 - 10px);
+    text-align: center; 
+}
 
 
     
