@@ -192,7 +192,7 @@ h6{
 
 
 nav{
-    width: 250px;
+    min-width: 250px;
     height: calc(100vh - 100px);
     background-color: #000000;
     color: #505050;
@@ -221,21 +221,27 @@ nav{
 
 #album{
     overflow: auto;
-    height: calc(100% - 100px);
+    
 }
     
     
 
 
 .musical-categories{
-    padding-top: 25px;
-    padding-bottom: 20px;
-    width: 100%;
+    padding: 40px 0; 
+    width: 70%;
+    margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
-
+    
+    
     color:#737373;
+}
+
+.musical-categories> h5{
+    width: calc(100% / 6 - 20px);
+    text-align: center;
 }
 
 .title-main{
@@ -250,7 +256,8 @@ nav{
 
 .col h5{
     color: white;
-    margin: 10px
+    margin: 10px;
+   
 }
 
 .img-circle{
@@ -410,6 +417,17 @@ X-Small <576px - Small >576px - Medium >768px - Large >992px
         width: calc(100% / 4 - 10px);
         
     }
+
+    .musical-categories{
+        padding: 40px 0; 
+        width: 100%;
+          
+    }
+    
+    .musical-categories> h5{
+        width: calc(100% / 5 - 20px);
+        margin-bottom: 2rem;
+    }
 }
 
 
@@ -418,6 +436,7 @@ X-Small <576px - Small >576px - Medium >768px - Large >992px
 /* ***SMALL** */
 
 @media screen and (max-width: 767px){
+
 
     /* ALBUM */
 
@@ -443,6 +462,11 @@ X-Small <576px - Small >576px - Medium >768px - Large >992px
     }
 
     
+    .musical-categories> h5{
+        width: calc(100% / 3 - 20px);
+        
+    }
+
 }
 
 
@@ -453,8 +477,8 @@ X-Small <576px - Small >576px - Medium >768px - Large >992px
     
     /* NAVBAR */
 
-    #navbar{
-        width: 50px;
+    nav{
+        min-width: 50px;
     }
 
     .container-nav{
@@ -486,6 +510,12 @@ X-Small <576px - Small >576px - Medium >768px - Large >992px
     }
 
 
+    /* ALNUM */
+
+    .musical-categories> h5{
+        width: calc(100% / 4 - 20px);
+        margin-bottom: 2rem;
+    }
 
     /* FOOTER */
     
