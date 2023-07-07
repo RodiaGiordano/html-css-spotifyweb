@@ -266,7 +266,7 @@ nav{
     color:#737373;
 }
 
-.musical-categories> h5{
+.musical-categories> *{
     width: calc(100% / 6 - 20px);
     text-align: center;
 }
@@ -453,14 +453,20 @@ X-Small <576px - Small >576px - Medium >768px - Large >992px
           
     }
     
-    .musical-categories> h5{
+    .musical-categories> *{
         width: calc(100% / 5 - 20px);
         margin-bottom: 2rem;
     }
 }
 
+/* .border-green{
+    display: flex;
+    justify-content: center ;
+} */
 
-
+.border-green> *{
+    text-align: center;
+}
 
 /* ***SMALL** */
 
@@ -491,7 +497,7 @@ X-Small <576px - Small >576px - Medium >768px - Large >992px
     }
 
     
-    .musical-categories> h5{
+    .musical-categories> *{
         width: calc(100% / 3 - 20px);
         
     }
@@ -539,9 +545,9 @@ X-Small <576px - Small >576px - Medium >768px - Large >992px
     }
 
 
-    /* ALNUM */
+    /* ABLNUM */
 
-    .musical-categories> h5{
+    .musical-categories> *{
         width: calc(100% / 4 - 20px);
         margin-bottom: 2rem;
     }
