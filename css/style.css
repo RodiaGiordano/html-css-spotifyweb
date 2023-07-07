@@ -313,7 +313,7 @@ nav{
     z-index: 10;
     text-align: right;
     line-height: 100px;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
 }
 
 
@@ -325,6 +325,9 @@ nav{
     padding:  10px  30px;
 }
 
+#button-header:hover{
+    transform: scale(1.1);
+}
 
 
 
