@@ -377,11 +377,8 @@ nav{
 
 #footer{
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    align-items: center;
+    justify-content: space-between; 
     padding: 10px 10px;
-
     background-color: #282828;
     color: white;
 
@@ -393,34 +390,41 @@ nav{
     z-index: 11;
 }
 
+
+
 .img-footer{
     height: 50px;
 }
 
-#footer .col{
+#footer .col-f{
     display: flex;
     align-items: center;
     
 
 }
 
-.col.song{
+.col-f.song{
     gap: 5px;
-    min-width: 150px;
+    
 }
 
 
 
 
-.icon{
+.icon {
     display: flex;
     align-items: center;
     gap: 15px;
+  
 
 }
 
+.icon.left{
+    margin: 0 33px;
+}
 
-.col.player{
+
+.col-f.player{
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
@@ -430,9 +434,12 @@ nav{
 
 
 
-.icon.middle{
-    gap: 30px;
+.icon-middle{
+    display: flex;
+    align-items: center;
+    gap: 30px;   
 }
+
 
 .bar-player{
     display: flex;
@@ -463,9 +470,10 @@ nav{
 }
 
 
-.col.sound{
+.col-f.sound{
     min-width: 150px;
     gap: 10px;
+    margin-left: 10px;
 }
 
 
@@ -578,15 +586,21 @@ X-Small <576px - Small >576px - Medium >768px - Large >992px
     }
 
 
-    /* ABLNUM */
+    /* ALBUM */
 
     .musical-categories> *{
         width: calc(100% / 4 - 20px);
         margin-bottom: 2rem;
     }
 
+
+
     /* FOOTER */
     
+.col-f.player{
+    margin-left: 20px;
+}
+
     #footer{
         gap: 0px;
     }
@@ -594,6 +608,15 @@ X-Small <576px - Small >576px - Medium >768px - Large >992px
     .img-footer{
         height: 40px;
     }
+
+    .icon.left{
+        margin: 0 10px 0 13px
+    }
+    
+    .col-f.sound{
+        margin-left: 20px;
+    }
+
 }
 
 
