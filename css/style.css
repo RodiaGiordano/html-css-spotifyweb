@@ -421,6 +421,12 @@ nav{
 
 .icon.left{
     margin: 0 33px;
+    color: #737373;
+}
+
+.icon.left> i:hover{
+    color: white;
+
 }
 
 
@@ -439,6 +445,12 @@ nav{
     align-items: center;
     gap: 30px;   
 }
+
+.icon-middle> .fa-circle-play:hover{
+    transform: scale(1.1);
+}
+
+
 
 
 .bar-player{
@@ -462,6 +474,7 @@ nav{
 .bar.progress{
     width: 30%;
     background-color: lightgray;
+    position: relative;
 }
 
 
@@ -477,7 +490,13 @@ nav{
 }
 
 
-
+.bar-circle{
+    display: noe;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+}
 
 
 /************* 
