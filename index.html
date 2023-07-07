@@ -3,124 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akatab&family=Bagel+Fat+One&family=Concert+One&family=Montserrat&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    
     <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!-- link css -->
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
 <body>
-    <main>
-        
+    <main id="main">
+        <nav id="navbar">
+            <div class="container-nav">
+                <div class="logo">
+                    <img id="logo-small" src="./img/logo-small.svg" alt="">
+                    <img id="logo-full" src="./img/logo.svg" alt="">
+                </div>
+
+                
+                    <div class="icon-nav">
+                        <img src="./img/home.svg" alt=""> 
+                        <h5>Home</h5>
+                    </div>
+
+                    
+                    <div class="icon-nav">
+                        <img src="./img/search.svg" alt="">
+                        <h5>Cerca</h5>
+                    </div>
+                    <div class="icon-nav">    
+                        <img src="./img/libreria.svg" alt="">
+                        <h5>La tua libreria</h5>
+                    </div>
+                   
+                
+                <div class="playlist">
+                    <h3>PLAYLIST</h3>
+                    <ul>
+                        <li id="square"><i class="fa-solid fa-square-plus"></i>Crea plalyst</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
+
+                <div class="install-app">
+                    <img src="./img/download.svg" alt="">
+                    <h5>Installa app</h5>
+                </div>
+                
+                <div class="user">
+                    <div class="img-user">
+                        <img src="./img/profile.svg" alt="">
+                    </div>
+                    <h4>Jhon Doe</h4>
+                </div>
+            </div>
+        </nav>
+                
+                
+        <div class="main-content">
+            <header id="header">
+                <button id="button-header">EFFETTUA L'UPGRADE</button>
+            </header>
+
+            <div id="album">
+                
+                <div class="musical-categories">
+                    <h5>IN EVIDENZA</h5>
+                    <h5>PODCAST</h5>
+                    <h5>CLASSIFICHE</h5>
+                    <h5>GENERI E MOOD</h5>
+                    <h5>NUOVE USCITE</h5>
+                    <h5>SCOPRI</h5>
+                </div>
+
+                <div class="container">
+                    <div class="title-main">
+                        <h2>Recently played</h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <img src="/img/metal_lifting.jpg" alt="metal">
+                            <h5>Hevy Metal</h5>
+                            <h6>Subtitle</h6>
+                        </div>
+                    
+
+                        <div class="col">
+                            <img src="/img/stranger.jpeg" alt="metal">
+                            <h5>Stranger Things, Vol. 1 (a Netflix Originals Series Soundtrack)</h5>
+                            <h6>Kyle Dixon & Michael Stein</h6>
+                        </div>
+
+                        <div class="col">
+                            <img src="/img/aquietplace.jpeg" alt="metal">
+                            <h5>A quiet place</h5>
+                            <h6>Subtitle</h6>
+                        </div>
+
+                        <div class="col">
+                            <img src="/img/split.jpeg" alt="metal">
+                            <h5>Splitl</h5>
+                            <h6>Subtitle</h6>
+                        </div>
+
+                        <div class="col">
+                            <img src="/img/cure.jpeg" alt="metal">
+                            <h5>A cure for wellness</h5>
+                            <h6>Subtitle</h6>
+                        </div>
+
+                        <div class="col">
+                            <img src="/img/sinister.jpeg" alt="metal">
+                            <h5>Sinister</h5>
+                            <h6>Subtitle</h6>
+                        </div>
+                    </div>
+
+                    <div class="title-main">
+                        <h2>Creato per Jhon Doe</h2>
+                        <h6>Più ascolti, più accurati saranno i suggerimenti</h6>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <img src="/img/radar.jpeg" alt="metal">
+                            <h5>Relase Radar</h5>
+                        </div>
+
+                        <div class="col">
+                            <img src="/img/mixdaily.jpeg" alt="metal">
+                            <h5>Daily Mix</h5>
+                        </div>
+                    </div>
+
+
+                    <div class="title-main">
+                        <h2>Artisti più popolari</h2>
+                        <h6>Più ascolti, più accurati saranno i suggerimenti</h6>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="img-circle">
+                                <img src="/img/youg.jpeg" alt="metal">
+                            </div>
+                            <h5>Lana del Rey</h5>
+                        </div>
+
+                        <div class="col">
+                            <div class="img-circle">
+                                <img src="/img/einaudi.jpeg" alt="metal">
+                            </div>
+                            <h5>Ludovico Enaudi</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+                            
+                        
+            
+                            
+
+                            
+
+                    
+
+
+
+
+
+
+
+
+
+
+
 
 
 
             
-        
 
-    </main>
 
         
         
-
-        
-
-
-
-
-
 
 
 
 
     <footer id="footer">
-        <div class="container">
-            
-            <div class="col left">
-                <div class="song">
-                    <div class="img-song">
-                        <img src="./img/sinister.jpeg" alt="album">
-                    </div>
-
-                    <div class="album">
-                        <div class="text name-album">Sinister</div>
-                        <div class="text small name-song">Brano Nome</div>
-                    </div>
-                </div>
-                        
-                <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
-                </div>
+        <div class="col song">
+            <img class="img-footer" src="./img/sinister.jpeg" alt="album" >
+            <div class="name-song">
+                <h5>Sinister</h5>
+                <h6>Brano Nome</h6>
             </div>
-            
+            <div class="icon left">
 
-                
-
-
-            <div class="col middle">
-
-                <div class="player">
-                    <ul>
-                        <li><i class="fa-solid fa-shuffle"></i></li>
-                        <li><i class="fa-solid fa-backward-step"></i></li>
-                        <li id="play"><i class="fa-regular fa-circle-play"></i></li>
-                        <li><i class="fa-solid fa-forward-step"></i></li>
-                        <li><i class="fa-solid fa-rotate-right"></i></li>
-                    </ul>
-                </div>
-                    
-                    
-                <div class="time-bar">
-                    <span class="text xsmall time">0:25</span>
-                    <div class="bar">
-                        <div class="bar minute">
-                            <!-- barra minutaggio -->
-                        </div>
-                    </div>
-                    <span class="text xsmall time">4:35</span>
-                </div>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
             </div>
-                        
-                    
-                        
-                    
-
-
-
-
-            <div class="col rigth">
-                
-                <div class="player">
-                    <ul>
-                        <li><i class="fa-solid fa-bars"></i></li>
-                        <li><i class="fa-solid fa-desktop"></i></li>
-                        <li><i class="fa-solid fa-volume-high"></i></li>
-                    </ul>
-                </div>
-
-                <div class="bar-sound">
-                    <div class="bar-volume">
-                        <!-- barra minutaggio -->
-                    </div>
-                        
-                </div>
-                        
-                        
-                    
-                        
-                        
-                
-            </div>
-                        
-
-            
         </div>
 
-        
+            
+
+
+        <div class="col player">
+            <div class="icon middle">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play fa-2xl"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+
+            
+            <div class="bar-player">
+                <span class="time-bar">0:25</span>
+                <div class="bar minute">
+                    <div class="bar progress">
+                        <!-- bar-progress -->
+                    </div>
+                </div>
+                <span class="time-bar">4:35</span>
+            </div>
+        </div>
+
+        <div class="col sound">
+            <div class="icon rigth">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-desktop"></i>
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+                
+            <div class="bar sound">
+                <div class="bar progress">
+                    <!-- bar-sound progress -->
+                </div>
+            </div>
+        </div>
+
     </footer>
-
-
-    
 </body>
 </html>
