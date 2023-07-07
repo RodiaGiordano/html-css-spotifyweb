@@ -271,6 +271,14 @@ nav{
     text-align: center;
 }
 
+.musical-categories h5:hover{
+    color: white;
+}
+
+
+
+
+
 .border-green{
     display: flex;
     flex-direction: column;
@@ -283,6 +291,8 @@ nav{
     height: 2px;
     margin-top: 3px;
 }
+
+
 
 .title-main{
     margin-bottom: 1.5rem;
