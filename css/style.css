@@ -403,36 +403,28 @@ nav{
 X-Small <576px - Small >576px - Medium >768px - Large >992px
 **************/
 
-/* ***LARGE*** */
-
-
-
-
-
-
 /* ***MEDIUM*** */
 
-@media screen and (max-width: 992px){
-
-/* ALBUM */
-
-.col{
-    width: calc(100% / 4 - 10px);
-    text-align: center; 
+@media screen and (max-width: 991px){
+    .col{
+        width: calc(100% / 4 - 10px);
+        
+    }
 }
 
 
-    
-}
-    
-
-          
 
 
+/* ***SMALL** */
 
-/* ***SMALL*** */
+@media screen and (max-width: 767px){
 
-@media screen and (max-width: 576px){
+    /* ALBUM */
+
+    .col{
+        width: calc(100% / 2 - 10px);
+        
+    }
 
     #footer{
         gap: 10px;
@@ -452,6 +444,7 @@ X-Small <576px - Small >576px - Medium >768px - Large >992px
 
     
 }
+
 
 
 /* *** X-SMALL*** */
