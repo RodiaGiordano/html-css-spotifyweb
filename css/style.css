@@ -490,14 +490,25 @@ nav{
 }
 
 
-.bar-circle{
-    display: noe;
+.circle-bar{
+    display: none;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 50%;
+    left: 100%;
     border-radius: 50%;
+    transform: translate(-50%, -50%);
+    height: 15px;
+    aspect-ratio: 1;
+    background-color: white;
 }
 
+.bar.progress:hover .circle-bar{
+    display: block;
+}
+
+.bar.progress:hover{
+    background-color: lime;
+}
 
 /************* 
 * RESPONSIVE * 
