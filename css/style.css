@@ -125,12 +125,18 @@ h6{
     display: flex;
     align-items: center;
     gap: 10px;
+}
 
+#navbar img{
+    filter:grayscale(5);
 }
 
 .icon-nav:hover, .playlist h3:hover, .playlist li:hover, .install-app> h5:hover {
     color: white;
+    filter: none;
 }
+
+
 
 .icon-nav:hover {
     box-shadow: inset 10px 0 0 -8px lime
