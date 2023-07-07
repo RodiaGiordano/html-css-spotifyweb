@@ -416,18 +416,17 @@ nav{
     align-items: center;
     gap: 15px;
   
-
 }
 
-.icon.left{
-    margin: 0 33px;
-    color: #737373;
+ .icon-left{
+    display: flex;
+    margin: 0 20px;
+    color:#737373;
+    gap: 15px;
 }
 
-.icon.left> i:hover{
-    color: white;
 
-}
+
 
 
 .col-f.player{
@@ -512,7 +511,7 @@ nav{
 
 /************* 
 * RESPONSIVE * 
-X-Small <576px - Small >576px - Medium >768px - Large >992px
+X-Small < 576px - Small >576px - Medium >768px - Large >992px
 **************/
 
 /* ***MEDIUM*** */
@@ -561,7 +560,7 @@ X-Small <576px - Small >576px - Medium >768px - Large >992px
         height: 40px;
     }
 
-    .icon.left{
+    .icon-left{
         flex-direction: column;
         gap: 5px;
         margin-left: 10px;
@@ -627,9 +626,9 @@ X-Small <576px - Small >576px - Medium >768px - Large >992px
 
     /* FOOTER */
     
-.col-f.player{
-    margin-left: 20px;
-}
+    .col-f.player{
+        margin-left: 20px;
+    }
 
     #footer{
         gap: 0px;
@@ -639,8 +638,8 @@ X-Small <576px - Small >576px - Medium >768px - Large >992px
         height: 40px;
     }
 
-    .icon.left{
-        margin: 0 10px 0 13px
+    .icon-left{
+        margin: 0 10px 0 13px;
     }
     
     .col-f.sound{
