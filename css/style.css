@@ -51,6 +51,10 @@ scorporare crea playlist dalle playlist */
     text-align: center; 
 }
 
+.col:hover img{
+    filter: sepia(10);
+    
+}
 
 
 
