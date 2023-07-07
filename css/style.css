@@ -8,9 +8,7 @@
 }
 
 /* aggiungere favicon
-rifare footer
-sistemare font
-scorporare crea playlist dalle playlist */
+ */
 
 
 /********** 
@@ -151,7 +149,10 @@ h6{
 .icon-nav img{
     width: 30px;
     display: block;
+    color: #737373;
 }
+
+.
 
 .playlist{
     overflow: auto;
